@@ -14,7 +14,7 @@ namespace AggregateGDPPopulation.Tests
             Class1 c = new Class1();
             c.calculateaggregate();
             JObject actual = JObject.Parse(File.ReadAllText(@"../../../../output.json"));
-            JObject expected = JObject.Parse(File.ReadAllText(@"C:../../../../AggregateGDPPopulation.Tests/expected-output.json"));
+            JObject expected = JObject.Parse(File.ReadAllText(@"../../../../AggregateGDPPopulation.Tests/expected-output.json"));
             Assert.Equal(actual, expected);
         }
 
